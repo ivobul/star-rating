@@ -1,0 +1,26 @@
+body {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 5px;
+}
+
+span {
+  color: #ffd200;
+  cursor: pointer;
+  font-size: 3.5rem;
+  position: relative;
+}
+
+span:hover::before,
+span:hover ~ span::before {
+  content: "\2605";
+  position: absolute;
+}
