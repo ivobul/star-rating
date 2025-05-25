@@ -13,7 +13,7 @@ body {
 }
 
 span {
-  color: #ffd200;
+  color: #808080;
   cursor: pointer;
   font-size: 3.5rem;
   position: relative;
@@ -21,6 +21,7 @@ span {
 
 span:hover::before,
 span:hover ~ span::before {
+  color: #FFD200;
   content: "\2605";
   position: absolute;
 }
